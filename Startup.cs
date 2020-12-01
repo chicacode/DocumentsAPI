@@ -31,6 +31,21 @@ namespace DocumentsAPI
 
             services.AddDbContext<DocumentsAPIContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("DocumentsAPIContext")));
+
+            // TODO Add cors
+            services.AddCors ( options =>
+            {
+                options.AddPolicy ( "AllowSpecificOrigin",
+                    builder =>
+                    {
+                        builder.WithOrigins ( "http://localhost:4200" );
+                        builder.SetIsOriginAllowedToAllowWildcardSubdomains ()
+                        .AllowAnyHeader ()
+                        .AllowAnyMethod ()
+                        .AllowCredentials ();
+
+                    } );
+            } );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +59,8 @@ namespace DocumentsAPI
             app.UseHttpsRedirection ();
 
             app.UseRouting ();
+
+            app.UseCors ( "AllowSpecificOrigin" );
 
             app.UseAuthorization ();
 
