@@ -7,10 +7,10 @@ This allows to perform a CRUD of various types of documents, persisting the data
 
 1. Clone the repo
 
-Use the package manager Nuget to install: 
+## Use the package manager Nuget to install: 
 	1. EntityFrameworkCore.Sqlite
-	2. EntityFrameworkCore.Sqlserver
-	3. EntityFrameworkCore.Tools
+	1. EntityFrameworkCore.Sqlserver
+	1. EntityFrameworkCore.Tools
 
 
 
