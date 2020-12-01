@@ -6,11 +6,12 @@ This allows to perform a CRUD of various types of documents, persisting the data
 ## Installation
 
 1. Clone the repo
+https://github.com/chicacode/DocumentsAPI.git 
 
 ## Use the package manager Nuget to install: 
-	1. EntityFrameworkCore.Sqlite
-	1. EntityFrameworkCore.Sqlserver
-	1. EntityFrameworkCore.Tools
+	* EntityFrameworkCore.Sqlite
+	* EntityFrameworkCore.Sqlserver
+	* EntityFrameworkCore.Tools
 
 
 
