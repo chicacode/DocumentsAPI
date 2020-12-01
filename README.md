@@ -20,6 +20,8 @@ https://github.com/chicacode/DocumentsAPI.git
 ```ASP.NET Core
 Use Documents API
 for CRUD Purpose
+// GET: api/Documents
+https://localhost:44306/api/documents
 ```
 
 ## Contributing
