@@ -32,7 +32,6 @@ namespace DocumentsAPI
             services.AddDbContext<DocumentsAPIContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("DocumentsAPIContext")));
 
-            // TODO Add cors
             services.AddCors ( options =>
             {
                 options.AddPolicy ( "AllowSpecificOrigin",

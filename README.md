@@ -1,6 +1,6 @@
 ﻿# DocumentsAPI
 
-DocumentsAPI is a .NET Core API for dealing with application to visualize documents.
+DocumentsAPI is a .NET Core API for dealing with application to visualize documents Web Application for Test Purpose.
 This allows to perform a CRUD of various types of documents, persisting the database in SQL Server
 
 ## Installation
@@ -8,20 +8,31 @@ This allows to perform a CRUD of various types of documents, persisting the data
 1. Clone the repo
 https://github.com/chicacode/DocumentsAPI.git 
 
+2. Install Dependencies from Nuget Package
+
 ## Use the package manager Nuget to install: 
 	* EntityFrameworkCore.Sqlite
 	* EntityFrameworkCore.Sqlserver
 	* EntityFrameworkCore.Tools
 
-
-
+3. Migrate Database
 ## Usage
-
 ```ASP.NET Core
 Use Documents API
-for CRUD Purpose
+for CRUD Purpose Signaturit API Frontend Test
+Methods
 // GET: api/Documents
 https://localhost:44306/api/documents
+
+// GET: api/Documents/5
+
+// PUT: api/Documents/5
+
+// POST: api/Documents
+
+// Delete
+
+DataBase Persistance in SQL Server 	through Connection string DocumentsAPIContext
 ```
 
 ## Contributing
