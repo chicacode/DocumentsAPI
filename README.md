@@ -1,7 +1,13 @@
 ﻿# DocumentsAPI
 
 DocumentsAPI is a .NET Core API for dealing with application to visualize documents Web Application for Test Purpose.
-This allows to perform a CRUD of various types of documents, persisting the database in SQL Server
+This allows to perform a CRUD of various types of documents, persisting the database in SQL Server.
+
+#Basic CRUD created in DotNet and Angular 10
+Allows to Add documents, list them, see the detail and delete them. Update method is in -backend, but not applied in Frontend
+Include a  filter by type doc and pagination
+
+Model Data Document with properties Id, Type (enum), Title, Date, Text and Image as string
 
 ## Installation
 
@@ -34,6 +40,7 @@ https://localhost:44306/api/documents
 
 DataBase Persistance in SQL Server 	through Connection string DocumentsAPIContext
 ```
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
